@@ -1,0 +1,43 @@
+{
+  "name": "jsfins",
+  "version": "0.0.1",
+  "description": "Implementation for the Omron FINS/UDP protocol.",
+  "author": "Michael A <michael@siyka.com>",
+  "main": "./src/fins.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siyka-au/node-fins.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "dependencies": {
+    "crc": "3.4.0",
+    "debug": "^3.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.3.0",
+    "nyc": "^13.1.0",
+    "sinon": "2.2.0",
+    "standard": "^8.5.0"
+  },
+  "scripts": {
+    "test": "standard && mocha test/*.test.js",
+    "watch": "standard && mocha --watch test/*.test.js",
+    "cov": "nyc mocha test/*.test.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "omron",
+  	"fins",
+    "udp",
+    "client",
+    "server",
+    "port"
+  ],
+  "readmeFilename": "README.md",
+  "directories": {
+    "test": "test",
+    "example": "examples"
+  }
+}
